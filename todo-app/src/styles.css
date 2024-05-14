@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(205, 97, 226, 0.5);
+}
+
+h1 {
+  color: rgb(8, 7, 7);
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for depth */
+  font-size: 36px; /* Increase font size for emphasis */
+  margin-bottom: 20px; /* Add some spacing below the header */
+  background-color: rgba(205, 97, 226, 0.8); /* Background color for header */
+  padding: 10px 20px; /* Add padding to the header */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+}
+
+h2 {
+  color: rgb(1, 1, 1);
+  padding: 5px;
+  text-align: center;
+  font-size: 24px; /* Increase font size for emphasis */
+  margin-bottom: 20px; /* Add some spacing below the subheader */
+  background-color: rgba(
+    205,
+    97,
+    226,
+    0.6
+  ); /* Background color for subheader */
+  padding: 8px 16px; /* Add padding to the subheader */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(205, 97, 226, 0.8),
+    rgba(155, 81, 224, 0.8)
+  ); /* Gradient background */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.2); /* Inner and outer box shadows */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+  width: 80%; /* Set the same width as the form */
+  margin: auto; /* Center the list */
+}
+
+li {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  background: linear-gradient(
+    25deg,
+    rgba(205, 97, 226, 0.8),
+    rgba(155, 81, 224, 0.8)
+  );
+  padding: 10px; /* Add padding to list items */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  width: 97%;
+}
+
+li:hover {
+  background-color: rgba(113, 7, 166, 0.4); /* Background color on hover */
+}
+
+button {
+  display: inline-block;
+  line-height: 15px;
+  border: none;
+  color: white;
+  padding: 8px 20px; /* Increase padding for more button space */
+  background-color: rgb(19, 17, 18);
+  cursor: pointer;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+}
+
+input {
+  font-size: 16px;
+  height: 40px;
+  width: 60%; /* Adjust width for better visibility */
+  text-align: center;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 7px;
+  line-height: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.checkbox:checked::before {
+  content: "\2713";
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
